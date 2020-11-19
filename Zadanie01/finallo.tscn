@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Cass.tscn" type="PackedScene" id=1]
+[ext_resource path="res://LEVEL.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Hello Boys/126355569_714529929180656_6559691939327484164_n.jpg" type="Texture" id=3]
+
+[node name="finallo" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="126355569_714529929180656_6559691939327484164_n" type="Sprite" parent="TextureRect"]
+position = Vector2( 947.171, 539.059 )
+scale = Vector2( 1.57506, 1.37985 )
+texture = ExtResource( 3 )
+
+[node name="Cass" parent="." instance=ExtResource( 1 )]
+position = Vector2( -9.53513, -10.5945 )
+gravity = 500
+
+[node name="LEVEL" parent="." instance=ExtResource( 2 )]

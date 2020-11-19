@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Halloween Background Music - Royalty Free Instrumental Music For Videos.ogg-8d6f263c88d3b703235a445328402b64.oggstr"
+
+[deps]
+
+source_file="res://Hello Boys/Halloween Background Music - Royalty Free Instrumental Music For Videos.ogg"
+dest_files=[ "res://.import/Halloween Background Music - Royalty Free Instrumental Music For Videos.ogg-8d6f263c88d3b703235a445328402b64.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

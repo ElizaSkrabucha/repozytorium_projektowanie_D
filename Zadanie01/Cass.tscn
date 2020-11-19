@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Cass.gd" type="Script" id=1]
+[ext_resource path="res://Hello Boys/126173238_280570713392240_5474526446205758843_n.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 18.0366, 41.6232 )
+
+[node name="Cass" type="KinematicBody2D"]
+script = ExtResource( 1 )
+run_speed = 200
+jump_speed = -300
+gravity = 250
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 357.737, 1713.93 )
+
+[node name="126173238_280570713392240_5474526446205758843_n" type="Sprite" parent="Sprite"]
+position = Vector2( -263.748, -821.799 )
+scale = Vector2( 0.0770806, 0.0778375 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 94.3611, 892.458 )
+shape = SubResource( 1 )
