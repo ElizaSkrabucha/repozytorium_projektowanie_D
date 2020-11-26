@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Cass.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Hello Boys/126355569_714529929180656_6559691939327484164_n.jpg" type="Texture" id=2]
@@ -7,247 +7,203 @@
 [ext_resource path="res://Hello Boys/Halloween Background Music - Royalty Free Instrumental Music For Videos.ogg" type="AudioStream" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 79.0513, 16.136 )
+extents = Vector2( 79.2569, 10.0725 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 192.874, 21.9634 )
+extents = Vector2( 13.179, 115.252 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 110.526, 25.6263 )
+extents = Vector2( 38.6306, 7.93219 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 18.507, 168.623 )
+extents = Vector2( 11.5133, 76.5651 )
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 55.4537, 18.5463 )
+extents = Vector2( 49.6069, 9.13908 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 34.4836, 135.559 )
+extents = Vector2( 136.545, 15.4725 )
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 122.008, 25.0957 )
+extents = Vector2( 99.5332, 17.6417 )
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 386.753, 29.8923 )
+extents = Vector2( 511.774, 15.5807 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 143.68, 42.9301 )
+extents = Vector2( 100.601, 13.8605 )
 
 [sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 962.354, 15.5807 )
+extents = Vector2( 86.2848, 14.1722 )
 
 [sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 109.556, 26.7682 )
+extents = Vector2( 92.6293, 10.3448 )
 
 [sub_resource type="RectangleShape2D" id=12]
-extents = Vector2( 89.9734, 17.1436 )
+extents = Vector2( 10, 381.221 )
 
 [sub_resource type="RectangleShape2D" id=13]
-extents = Vector2( 190.166, 37.1042 )
-
-[sub_resource type="RectangleShape2D" id=14]
-extents = Vector2( 152.243, 24.5211 )
+extents = Vector2( 11.4972, 395.614 )
 
 [node name="LEVEL" type="Node2D"]
 
 [node name="126355569_714529929180656_6559691939327484164_n" type="Sprite" parent="."]
-position = Vector2( 952.103, 535.71 )
-scale = Vector2( 1.57984, 1.38429 )
+position = Vector2( 512.754, 367.13 )
+scale = Vector2( 0.847592, 0.926063 )
 texture = ExtResource( 2 )
 
-[node name="hell yaaay" type="TextureRect" parent="."]
-margin_left = 4.0
-margin_top = 2.0
-margin_right = 1900.0
-margin_bottom = 1072.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Cass" parent="." instance=ExtResource( 1 )]
-position = Vector2( -30.3659, 126.812 )
+position = Vector2( 18.4671, 0.177048 )
 
 [node name="Crowley" type="Sprite" parent="."]
-position = Vector2( 1737.04, 172.752 )
-scale = Vector2( 0.104059, 0.0927686 )
+position = Vector2( 944.295, 153.569 )
+scale = Vector2( 0.0616715, 0.0707631 )
 texture = ExtResource( 3 )
 
 [node name="platforemki" type="Node" parent="."]
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="platforemki"]
-position = Vector2( 301.16, 1042.82 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D3"]
-position = Vector2( 1308.49, -155.237 )
-shape = SubResource( 1 )
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="platforemki"]
-position = Vector2( 301.16, 1042.82 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D4"]
-position = Vector2( 1332.49, -413.25 )
-shape = SubResource( 2 )
 
 [node name="StaticBody2D5" type="StaticBody2D" parent="platforemki"]
 position = Vector2( 301.16, 1042.82 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D5"]
-position = Vector2( 468.728, -552.662 )
-shape = SubResource( 3 )
+position = Vector2( 257.88, -598.831 )
+shape = SubResource( 1 )
 
 [node name="StaticBody2D6" type="StaticBody2D" parent="platforemki"]
 position = Vector2( 301.16, 1042.82 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D6"]
-position = Vector2( 1466.38, -783.321 )
+position = Vector2( 573.134, -833.558 )
 rotation = 1.5708
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="StaticBody2D7" type="StaticBody2D" parent="platforemki"]
 position = Vector2( 301.16, 1042.82 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D7"]
-position = Vector2( 1314.65, -856.076 )
+position = Vector2( 470.553, -875.902 )
 rotation = 1.5708
-shape = SubResource( 5 )
+shape = SubResource( 3 )
 
 [node name="StaticBody2D8" type="StaticBody2D" parent="platforemki"]
 position = Vector2( 1615.81, 186.746 )
 rotation = 1.5708
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D8"]
-position = Vector2( 166.689, 1140.01 )
-shape = SubResource( 6 )
+position = Vector2( 256.755, 1326.39 )
+shape = SubResource( 4 )
 
 [node name="StaticBody2D9" type="StaticBody2D" parent="platforemki"]
 position = Vector2( 963.051, 545.748 )
 scale = Vector2( 1.59984, 1.38429 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D9"]
-position = Vector2( 193.74, -221.734 )
-shape = SubResource( 7 )
+position = Vector2( -539.45, -137.089 )
+shape = SubResource( 5 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="platforemki"]
 position = Vector2( 301.16, 1042.82 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D2"]
-position = Vector2( 558.499, -111.119 )
-shape = SubResource( 8 )
+position = Vector2( 195.691, -410.411 )
+shape = SubResource( 6 )
 
 [node name="kamulce" type="StaticBody2D" parent="platforemki"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/kamulce"]
-position = Vector2( 302.524, 1018.77 )
-shape = SubResource( 9 )
+position = Vector2( 249.038, 696.188 )
+shape = SubResource( 7 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="platforemki"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D"]
-position = Vector2( 942.079, 1076.71 )
-shape = SubResource( 10 )
+position = Vector2( 511.585, 734.395 )
+shape = SubResource( 8 )
 
 [node name="StaticBody2D10" type="StaticBody2D" parent="platforemki"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D10"]
-position = Vector2( 1141.78, 565.381 )
-shape = SubResource( 11 )
+position = Vector2( 798.21, 559.246 )
+shape = SubResource( 9 )
 
 [node name="StaticBody2D11" type="StaticBody2D" parent="platforemki"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D11"]
-position = Vector2( 1331.76, 771.554 )
-shape = SubResource( 12 )
-
-[node name="StaticBody2D12" type="StaticBody2D" parent="platforemki"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D12"]
-position = Vector2( 1645.23, 1013.49 )
-shape = SubResource( 13 )
+position = Vector2( 279.215, 186.672 )
+shape = SubResource( 10 )
 
 [node name="StaticBody2D13" type="StaticBody2D" parent="platforemki"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D13"]
-position = Vector2( 760.365, 225.411 )
-shape = SubResource( 14 )
+position = Vector2( 575.371, 246.345 )
+shape = SubResource( 11 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="platforemki"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D3"]
+position = Vector2( -9.84009, 372.595 )
+shape = SubResource( 12 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="platforemki"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platforemki/StaticBody2D4"]
+position = Vector2( 1032.6, 371.887 )
+shape = SubResource( 13 )
 
 [node name="text" type="Node" parent="."]
 
 [node name="cartoon-stone-texture_1110-576" type="Sprite" parent="text"]
-position = Vector2( 1273.65, 218.069 )
-scale = Vector2( 0.618268, 0.172664 )
+position = Vector2( 575.523, 245.704 )
+scale = Vector2( 0.289646, 0.137349 )
 texture = ExtResource( 4 )
 
 [node name="cartoon-stone-texture_1110-577" type="Sprite" parent="text"]
-position = Vector2( 299.147, 998.225 )
-scale = Vector2( 0.451522, 0.236324 )
-texture = ExtResource( 4 )
-
-[node name="cartoon-stone-texture_1110-578" type="Sprite" parent="text"]
-position = Vector2( 1049.27, 922.763 )
-scale = Vector2( 0.627598, 0.261188 )
+position = Vector2( 248.313, 692.409 )
+scale = Vector2( 0.310241, 0.163447 )
 texture = ExtResource( 4 )
 
 [node name="cartoon-stone-texture_1110-579" type="Sprite" parent="text"]
-position = Vector2( 670.769, 922.11 )
-scale = Vector2( 0.61115, 0.250576 )
-texture = ExtResource( 4 )
-
-[node name="cartoon-stone-texture_1110-580" type="Sprite" parent="text"]
-position = Vector2( 1609.22, 882.323 )
-scale = Vector2( 0.253498, 0.13553 )
+position = Vector2( 491.435, 630.383 )
+scale = Vector2( 0.388524, 0.175066 )
 texture = ExtResource( 4 )
 
 [node name="cartoon-stone-texture_1110-590" type="Sprite" parent="text"]
-position = Vector2( 1334.32, 769.1 )
+position = Vector2( 279.856, 183.659 )
 scale = Vector2( 0.264921, 0.163814 )
 texture = ExtResource( 4 )
 
-[node name="cartoon-stone-texture_1110-581" type="Sprite" parent="text"]
-position = Vector2( 1633.56, 625.697 )
-scale = Vector2( 0.607638, 0.216882 )
-texture = ExtResource( 4 )
-
 [node name="cartoon-stone-texture_1110-582" type="Sprite" parent="text"]
-position = Vector2( 481.853, 338.896 )
-scale = Vector2( 0.399195, 0.262523 )
+position = Vector2( 294.686, 436.904 )
+scale = Vector2( 0.258646, 0.14919 )
 texture = ExtResource( 4 )
 
 [node name="cartoon-stone-texture_1110-583" type="Sprite" parent="text"]
-position = Vector2( 1615.76, 185.997 )
+position = Vector2( 773.025, 159.714 )
 rotation = 1.5708
-scale = Vector2( 0.176746, 0.20413 )
+scale = Vector2( 0.127951, 0.103449 )
 texture = ExtResource( 4 )
 
 [node name="cartoon-stone-texture_1110-584" type="Sprite" parent="text"]
-position = Vector2( 1759.84, 255.487 )
-scale = Vector2( 0.51672, 0.172664 )
+position = Vector2( 871.547, 207.428 )
+scale = Vector2( 0.352038, 0.147494 )
 texture = ExtResource( 4 )
 
 [node name="cartoon-stone-texture_1110-585" type="Sprite" parent="text"]
-position = Vector2( 768.278, 484.742 )
-scale = Vector2( 0.341251, 0.236324 )
-texture = ExtResource( 4 )
-
-[node name="cartoon-stone-texture_1110-586" type="Sprite" parent="text"]
-position = Vector2( 1642.78, 991.387 )
-scale = Vector2( 0.607638, 0.216882 )
+position = Vector2( 555.37, 443.799 )
+scale = Vector2( 0.250782, 0.122991 )
 texture = ExtResource( 4 )
 
 [node name="cartoon-stone-texture_1110-587" type="Sprite" parent="text"]
-position = Vector2( 1138.06, 556.56 )
+position = Vector2( 799.392, 567.126 )
 scale = Vector2( 0.341251, 0.236324 )
 texture = ExtResource( 4 )
 
 [node name="cartoon-stone-texture_1110-588" type="Sprite" parent="text"]
-position = Vector2( 754.932, 218.852 )
-scale = Vector2( 0.466348, 0.188444 )
-texture = ExtResource( 4 )
-
-[node name="cartoon-stone-texture_1110-589" type="Sprite" parent="text"]
-position = Vector2( 757.932, 214.852 )
-scale = Vector2( 0.466348, 0.188444 )
+position = Vector2( 103.305, 357.698 )
+scale = Vector2( 0.232275, 0.171645 )
 texture = ExtResource( 4 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 3.77975, 11.3393 )
 stream = ExtResource( 5 )
 autoplay = true

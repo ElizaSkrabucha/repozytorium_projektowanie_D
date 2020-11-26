@@ -16,10 +16,10 @@ gravity = 250
 position = Vector2( 357.737, 1713.93 )
 
 [node name="126173238_280570713392240_5474526446205758843_n" type="Sprite" parent="Sprite"]
-position = Vector2( -263.748, -821.799 )
+position = Vector2( -304.227, -1036.52 )
 scale = Vector2( 0.0770806, 0.0778375 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 94.3611, 892.458 )
+position = Vector2( 52.621, 677.742 )
 shape = SubResource( 1 )
