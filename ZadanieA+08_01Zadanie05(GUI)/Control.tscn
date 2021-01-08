@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://START.gd" type="Script" id=1]
+[ext_resource path="res://TITLE.png" type="Texture" id=2]
+[ext_resource path="res://unnamed.png" type="Texture" id=3]
+[ext_resource path="res://Begin the Hunt.png" type="Texture" id=4]
+
+[sub_resource type="Theme" id=1]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.317647, 0.0196078, 0.0196078, 1 )
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -1.25995
+margin_top = 1.25995
+margin_right = 1023.74
+margin_bottom = 720.26
+color = Color( 0.0470588, 0.0431373, 0.0431373, 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 58.8591
+margin_top = 98.0397
+margin_right = 587.859
+margin_bottom = 634.04
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_left = 546.806
+margin_top = 66.7758
+margin_right = 951.806
+margin_bottom = 152.776
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="START" type="Button" parent="."]
+margin_left = 677.014
+margin_top = 237.003
+margin_right = 927.014
+margin_bottom = 405.003
+theme = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+icon = ExtResource( 4 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="START" to="START" method="_on_START_pressed"]

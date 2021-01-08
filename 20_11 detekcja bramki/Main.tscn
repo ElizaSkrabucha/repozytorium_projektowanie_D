@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Floor.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player.gd" type="Script" id=4]
+
+[node name="Main" type="Spatial"]
+
+[node name="Floor" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0.000488692, 0, -0.000488692, 1, 0, 0, 0, 1, 0.420151, -0.275472, -0.386133 )
+
+[node name="Wall" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.18313, 0.825178, -1.64637 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2694, 0.0395858, 2.92808 )
+script = ExtResource( 4 )
+
+[node name="Wall2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 0.995168, 0.0981909, 0, -0.0981909, 0.995168, 2.93001, 0.806393, -1.63035 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.09088, 1.42582, 6.0257 )
+fov = 179.0

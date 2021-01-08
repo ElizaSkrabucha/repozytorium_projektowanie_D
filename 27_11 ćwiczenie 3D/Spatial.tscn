@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://entities/player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Ball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Gate.tscn" type="PackedScene" id=3]
+[ext_resource path="res://floor.tscn" type="PackedScene" id=4]
+
+[node name="mainball" type="Spatial"]
+
+[node name="Ball" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.10218, 0.115605, 0.0547816, -0.0614617, 0.978673, -0.000205328, 0.0413114, 0.00403917, -0.688364, 0.2524, 1.16515, 6.00835 )
+
+[node name="Spatial" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1.72808, 0, 0, 0, 1.83278, 0, 0, 0, 1, 0.130473, 0.24496, -3.53752 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+head_path = NodePath("../../mainball/Player/Head")
+cam_path = NodePath("../../mainball/Player/Head/Camera")
+
+[node name="floor" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
