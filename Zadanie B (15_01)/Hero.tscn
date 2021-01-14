@@ -1,0 +1,58 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Hero.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Jump/Warrior_Jump_3.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Run/Warrior_Run_4.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Run/Warrior_Run_8.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Jump/Warrior_Jump_1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Run/Warrior_Run_2.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Run/Warrior_Run_5.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Run/Warrior_Run_3.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Jump/Warrior_Jump_2.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Run/Warrior_Run_7.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Run/Warrior_Run_6.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Run/Warrior_Run_1.png" type="Texture" id=12]
+[ext_resource path="res://Assets/idle/Warrior_Idle_4.png" type="Texture" id=13]
+[ext_resource path="res://Assets/idle/Warrior_Idle_2.png" type="Texture" id=14]
+[ext_resource path="res://Assets/idle/Warrior_Idle_5.png" type="Texture" id=15]
+[ext_resource path="res://Assets/idle/Warrior_Idle_6.png" type="Texture" id=16]
+[ext_resource path="res://Assets/idle/Warrior_Idle_3.png" type="Texture" id=17]
+[ext_resource path="res://Assets/idle/Warrior_Idle_1.png" type="Texture" id=18]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 9 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 14 ), ExtResource( 17 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "stand",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 9.40332
+height = 33.7885
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 1 )
+jump_speed = -480
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 87.0857, 520.295 )
+scale = Vector2( 1.38033, 1.56224 )
+frames = SubResource( 1 )
+animation = "stand"
+frame = 5
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 79.7463, 528.881 )
+shape = SubResource( 2 )
