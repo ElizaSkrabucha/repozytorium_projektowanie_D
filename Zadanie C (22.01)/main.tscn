@@ -12,11 +12,11 @@ font_data = ExtResource( 1 )
 size = 30
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 30
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 37
 font_data = ExtResource( 1 )
 
@@ -97,7 +97,7 @@ margin_left = 384.405
 margin_top = 368.729
 margin_right = 686.405
 margin_bottom = 420.729
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -107,7 +107,7 @@ margin_left = -24.3566
 margin_top = -87.364
 margin_right = 288.643
 margin_bottom = 181.636
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Hello Darling,
 Let's Play A Game
 Guess A Number
