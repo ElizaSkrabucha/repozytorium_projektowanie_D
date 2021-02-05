@@ -1,0 +1,456 @@
+[gd_scene load_steps=47 format=2]
+
+[ext_resource path="res://Assets/center/center.png" type="Texture" id=1]
+[ext_resource path="res://Assets/CemetaryPack/Props/Mist.png" type="Texture" id=2]
+[ext_resource path="res://Assets/CemetaryPack/Props/Church.png" type="Texture" id=3]
+[ext_resource path="res://Hero.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/CemetaryPack/Props/BackGround01.png" type="Texture" id=5]
+[ext_resource path="res://Assets/CemetaryPack/Fire/Fire_02.png" type="Texture" id=6]
+[ext_resource path="res://Assets/CemetaryPack/Fire/Fire_05.png" type="Texture" id=7]
+[ext_resource path="res://Assets/CemetaryPack/Fire/Fire_06.png" type="Texture" id=8]
+[ext_resource path="res://Assets/CemetaryPack/Fire/Fire_07.png" type="Texture" id=9]
+[ext_resource path="res://Assets/CemetaryPack/Moon/Moon_03.png" type="Texture" id=10]
+[ext_resource path="res://Assets/CemetaryPack/Fire/Fire_08.png" type="Texture" id=11]
+[ext_resource path="res://Assets/CemetaryPack/Moon/Moon_07.png" type="Texture" id=12]
+[ext_resource path="res://Assets/CemetaryPack/Moon/Moon_02.png" type="Texture" id=13]
+[ext_resource path="res://Assets/CemetaryPack/Moon/Moon_05.png" type="Texture" id=14]
+[ext_resource path="res://Assets/CemetaryPack/Moon/Moon_01.png" type="Texture" id=15]
+[ext_resource path="res://Assets/CemetaryPack/Moon/Moon_08.png" type="Texture" id=16]
+[ext_resource path="res://Assets/CemetaryPack/Fire/Fire_01.png" type="Texture" id=17]
+[ext_resource path="res://Assets/CemetaryPack/Fire/Fire_03.png" type="Texture" id=18]
+[ext_resource path="res://Assets/CemetaryPack/Fire/Fire_04.png" type="Texture" id=19]
+[ext_resource path="res://Assets/CemetaryPack/Props/d85caf6012eea80bd824acaf42cba3b0.png" type="Texture" id=20]
+[ext_resource path="res://Assets/CemetaryPack/Water/Tree.png" type="Texture" id=21]
+[ext_resource path="res://Assets/tło/Wallpaper-pixel-art-pixelated-pixels-digital-art-space-.jpg" type="Texture" id=22]
+[ext_resource path="res://Assets/CemetaryPack/Props/Grave02.png" type="Texture" id=23]
+[ext_resource path="res://Assets/tło/(Free) Horror Ambiance - Ominous Background Music.ogg" type="AudioStream" id=24]
+[ext_resource path="res://Assets/center/Under_Platform_Center.png" type="Texture" id=25]
+[ext_resource path="res://Assets/center/moving_platform.png" type="Texture" id=26]
+[ext_resource path="res://Enemies.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Level.gd" type="Script" id=28]
+[ext_resource path="res://Assets/MagicSchoolOne.ttf" type="DynamicFontData" id=29]
+[ext_resource path="res://Assets/tło/gate.png" type="Texture" id=30]
+
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 18.6675, 44.493 )
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
+
+[sub_resource type="TileSet" id=2]
+0/name = "center.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "center.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 1 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 17 ), ExtResource( 6 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 17 ), ExtResource( 6 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="PhysicsMaterial" id=5]
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 10, 49.5489 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 30
+font_data = ExtResource( 29 )
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 15 ), ExtResource( 13 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 12 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="TileSet" id=9]
+0/name = "Grave02.png 0"
+0/texture = ExtResource( 23 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=10]
+0/name = "Tree.png 0"
+0/texture = ExtResource( 21 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 128, 128 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 1502.04, 7.42468 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 34.8086, 7.70691 )
+
+[sub_resource type="Animation" id=13]
+length = 6.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("KinematicBody2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3, 6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2719.27, 399.529 ), Vector2( 2845.32, 399.529 ), Vector2( 2719.27, 399.529 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 36.2598, 7.56677 )
+
+[sub_resource type="Animation" id=15]
+length = 12.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("KinematicBody2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 3850.88, 473.599 ), Vector2( 4167.12, 473.598 ) ]
+}
+
+[node name="Level" type="Node2D"]
+script = ExtResource( 28 )
+
+[node name="Gate" type="Area2D" parent="."]
+collision_layer = 8
+
+[node name="Sprite" type="Sprite" parent="Gate"]
+position = Vector2( 5306, 410 )
+texture = ExtResource( 30 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gate"]
+position = Vector2( 5307.53, 419.501 )
+shape = SubResource( 16 )
+
+[node name="Platforms" type="TileMap" parent="."]
+scale = Vector2( 0.25, 0.25 )
+tile_set = SubResource( 2 )
+collision_layer = 2
+format = 1
+tile_data = PoolIntArray( 852026, 1, 0, 852027, 1, 0, 852028, 1, 0, 852029, 1, 0, 852030, 1, 0, 852031, 1, 0, 852032, 1, 0, 852033, 1, 0, 852034, 1, 0, 852035, 1, 0, 983170, 1, 0, 983171, 1, 0, 983172, 1, 0, 983173, 1, 0, 983174, 1, 0, 983175, 1, 0, 983176, 1, 0, 983177, 1, 0, 983178, 1, 0, 983179, 1, 0, 983180, 1, 0, 1048625, 1, 0, 1048626, 1, 0, 1048627, 1, 0, 1048628, 1, 0, 1048629, 1, 0, 1048630, 1, 0, 1048631, 1, 0, 1114182, 1, 0, 1114183, 1, 0, 1114184, 1, 0, 1114185, 1, 0, 1114186, 1, 0, 1114187, 1, 0, 1114188, 1, 0, 1114189, 1, 0, 1114190, 1, 0, 1114191, 1, 0, 1114192, 1, 0, 1114193, 1, 0, 1114194, 1, 0, 1114195, 1, 0, 1114196, 1, 0, 1114197, 1, 0, 1114198, 1, 0, 1114227, 1, 0, 1114228, 1, 0, 1114229, 1, 0, 1114230, 1, 0, 1114231, 1, 0, 1114232, 1, 0, 1114233, 1, 0, 1114234, 1, 0, 1114235, 1, 0, 1114236, 1, 0, 1114237, 1, 0, 1114238, 1, 0, 1245326, 1, 0, 1245327, 1, 0, 1245328, 1, 0, 1245329, 1, 0, 1245330, 1, 0, 1310760, 1, 0, 1310761, 1, 0, 1310762, 1, 0, 1310763, 1, 0, 1310764, 1, 0, 1310765, 1, 0, 1310766, 1, 0, 1310767, 1, 0, 1310768, 1, 0, 1310810, 1, 0, 1310811, 1, 0, 1310812, 1, 0, 1310813, 1, 0, 1310814, 1, 0, 1310815, 1, 0, 1310816, 1, 0, 1310817, 1, 0, 1310818, 1, 0, 1310819, 1, 0, 1310820, 1, 0, 1310821, 1, 0, 1310822, 1, 0, 1310823, 1, 0, 1310824, 1, 0, 1310825, 1, 0, 1310826, 1, 0, 1310827, 1, 0, 1310828, 1, 0, 1310829, 1, 0, 1310830, 1, 0, 1310831, 1, 0, 1441943, 1, 0, 1441944, 1, 0, 1441945, 1, 0, 1441946, 1, 0, 1573022, 1, 0, 1573023, 1, 0, 1573024, 1, 0, 1573025, 1, 0, 1573026, 1, 0, 1573027, 1, 0, 1573028, 1, 0, 1638431, 1, 0, 1638432, 1, 0, 1638433, 1, 0, 1638434, 1, 0, 1638435, 1, 0, 1638436, 1, 0, 1638437, 1, 0, 1638438, 1, 0, 1638439, 1, 0, 1966070, 1, 0, 1966071, 1, 0, 1966072, 1, 0, 1966073, 1, 0, 1966074, 1, 0, 1966075, 1, 0, 1966076, 1, 0, 1966077, 1, 0, 1966078, 1, 0, 1966079, 1, 0, 1900544, 1, 0, 1900545, 1, 0, 1900546, 1, 0, 1900547, 1, 0, 1900548, 1, 0, 1900549, 1, 0, 1900550, 1, 0, 1900551, 1, 0, 1900552, 1, 0, 1900553, 1, 0, 1900554, 1, 0, 1900555, 1, 0, 1900556, 1, 0, 1900557, 1, 0, 1900558, 1, 0, 1900559, 1, 0, 1900560, 1, 0, 1900561, 1, 0, 1900562, 1, 0, 1900563, 1, 0, 1900564, 1, 0, 1900565, 1, 0, 1900566, 1, 0, 1900567, 1, 0, 1900568, 1, 0, 1900569, 1, 0, 1900570, 1, 0, 1900571, 1, 0, 1900572, 1, 0, 1900573, 1, 0, 1900574, 1, 0, 1900575, 1, 0, 1900576, 1, 0, 1900577, 1, 0, 1900578, 1, 0, 1900579, 1, 0, 1900580, 1, 0, 1900581, 1, 0, 1900582, 1, 0, 1900583, 1, 0, 1900584, 1, 0, 1900585, 1, 0, 1900586, 1, 0, 1900587, 1, 0, 1900588, 1, 0, 1900589, 1, 0, 1900590, 1, 0, 1900591, 1, 0, 1900592, 1, 0, 1900593, 1, 0, 1900594, 1, 0, 1900595, 1, 0, 1900596, 1, 0, 1900597, 1, 0, 1900598, 1, 0, 1900599, 1, 0, 1900600, 1, 0, 1900601, 1, 0, 1900602, 1, 0, 1900603, 1, 0, 1900604, 1, 0, 1900605, 1, 0, 1900724, 1, 0, 1900725, 1, 0, 1900726, 1, 0, 1900727, 1, 0, 1900728, 1, 0, 1900729, 1, 0, 1900730, 1, 0, 1900731, 1, 0, 1900732, 1, 0, 1900733, 1, 0, 1900734, 1, 0, 1900735, 1, 0, 1900736, 1, 0, 1900737, 1, 0, 1900738, 1, 0, 1900739, 1, 0, 1900740, 1, 0, 1900741, 1, 0, 1900742, 1, 0, 1900743, 1, 0, 1900744, 1, 0, 1900745, 1, 0, 1900746, 1, 0, 1900747, 1, 0, 1900748, 1, 0, 1900749, 1, 0, 1900750, 1, 0, 1900751, 1, 0, 1900752, 1, 0, 1900753, 1, 0, 1900754, 1, 0, 1900755, 1, 0, 1900756, 1, 0, 1900757, 1, 0, 1900758, 1, 0, 1900759, 1, 0, 1900760, 1, 0, 1900761, 1, 0, 1900762, 1, 0, 1900763, 1, 0, 1900764, 1, 0, 1900765, 1, 0, 1900766, 1, 0, 1900767, 1, 0, 1900768, 1, 0, 1900769, 1, 0, 1900770, 1, 0, 1900771, 1, 0, 1900772, 1, 0, 1900773, 1, 0, 1900774, 1, 0, 1900775, 1, 0, 1900776, 1, 0, 1900777, 1, 0, 1900778, 1, 0, 1900779, 1, 0, 1900780, 1, 0, 1900809, 1, 0, 1900810, 1, 0, 1900811, 1, 0, 1900812, 1, 0, 1900813, 1, 0, 1900814, 1, 0, 1900815, 1, 0, 1900816, 1, 0, 1900817, 1, 0, 1900818, 1, 0, 1900819, 1, 0, 1900820, 1, 0, 1900821, 1, 0, 1900822, 1, 0, 1900823, 1, 0, 1900824, 1, 0, 1900825, 1, 0, 1900826, 1, 0, 1900827, 1, 0, 1900828, 1, 0, 1900829, 1, 0, 1900830, 1, 0, 1900831, 1, 0, 1900832, 1, 0, 1900833, 1, 0, 1900834, 1, 0, 1900835, 1, 0, 1900836, 1, 0, 1900837, 1, 0, 1900838, 1, 0, 1900839, 1, 0, 1900840, 1, 0, 1900841, 1, 0, 1900842, 1, 0, 1900843, 1, 0, 1900844, 1, 0, 1900845, 1, 0, 1900846, 1, 0, 1900847, 1, 0, 1900848, 1, 0, 1900849, 1, 0, 1900850, 1, 0, 1900851, 1, 0, 1900852, 1, 0, 1900853, 1, 0, 1900854, 1, 0, 1900855, 1, 0, 1900856, 1, 0, 1900857, 1, 0, 1900858, 1, 0, 1900859, 1, 0, 1900860, 1, 0, 1900861, 1, 0, 1900862, 1, 0, 1900863, 1, 0, 1900864, 1, 0, 1900865, 1, 0, 1900866, 1, 0, 1900867, 1, 0, 1900868, 1, 0, 1900869, 1, 0, 1900870, 1, 0, 1900871, 1, 0, 1900872, 1, 0, 1900873, 1, 0, 1900874, 1, 0, 1900875, 1, 0, 1900876, 1, 0, 1900877, 1, 0, 1900878, 1, 0, 1900879, 1, 0, 1900880, 1, 0, 1900881, 1, 0 )
+
+[node name="Under_platform" type="Sprite" parent="."]
+position = Vector2( 413.004, 525.054 )
+scale = Vector2( 22.697, 1 )
+texture = ExtResource( 25 )
+
+[node name="Under_platform2" type="Sprite" parent="."]
+position = Vector2( 3336.02, 525.745 )
+scale = Vector2( 17.8847, 1 )
+texture = ExtResource( 25 )
+
+[node name="Under_platform3" type="Sprite" parent="."]
+position = Vector2( 4824.11, 528.211 )
+scale = Vector2( 22.8957, 1.04682 )
+texture = ExtResource( 25 )
+
+[node name="Church" type="Sprite" parent="."]
+modulate = Color( 0.807843, 0.878431, 0.952941, 1 )
+position = Vector2( 38.7475, 349.79 )
+scale = Vector2( 1.20846, 1.36967 )
+texture = ExtResource( 3 )
+
+[node name="Fire" type="AnimatedSprite" parent="."]
+position = Vector2( 568, 391 )
+frames = SubResource( 3 )
+frame = 1
+playing = true
+
+[node name="Fire2" type="AnimatedSprite" parent="."]
+position = Vector2( 1035.66, 199.666 )
+frames = SubResource( 3 )
+frame = 1
+playing = true
+
+[node name="Fire3" type="AnimatedSprite" parent="."]
+position = Vector2( 2311.39, 297.968 )
+scale = Vector2( 1, 0.828192 )
+frames = SubResource( 4 )
+frame = 1
+playing = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( -16.7935, 409.317 )
+collision_layer = 2147483650
+collision_mask = 17
+physics_material_override = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+position = Vector2( -0.529732, -0.529732 )
+scale = Vector2( 1.00828, 1.00913 )
+texture = ExtResource( 21 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 10.0649, 8.4757 )
+shape = SubResource( 6 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2( 0, 0 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sky" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 311.204, 238.759 )
+scale = Vector2( 0.348356, 0.450004 )
+texture = ExtResource( 22 )
+
+[node name="Label" type="Label" parent="ParallaxBackground"]
+margin_left = 13.5305
+margin_top = 16.1225
+margin_right = 157.53
+margin_bottom = 61.1225
+custom_fonts/font = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ParallaxBackground3" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2( 10, 0 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground3"]
+motion_scale = Vector2( 0.25, 1 )
+motion_offset = Vector2( 1, 0 )
+motion_mirroring = Vector2( 250, 1 )
+
+[node name="Cemetery" type="Sprite" parent="ParallaxBackground3/ParallaxLayer2"]
+modulate = Color( 0.760784, 0.764706, 0.772549, 1 )
+position = Vector2( 307.807, 419.441 )
+scale = Vector2( 2.78528, 1.89922 )
+texture = ExtResource( 5 )
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+position = Vector2( 1, 0 )
+scale = Vector2( 2, 1 )
+motion_mirroring = Vector2( 150, 0 )
+
+[node name="Mist" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+modulate = Color( 0.67451, 0.729412, 0.741176, 1 )
+light_mask = 561281
+position = Vector2( 149.016, 453.767 )
+scale = Vector2( 0.635148, 0.820011 )
+texture = ExtResource( 2 )
+
+[node name="ParallaxBackground4" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground4"]
+motion_mirroring = Vector2( 1, 1 )
+
+[node name="Moon" type="AnimatedSprite" parent="ParallaxBackground4/ParallaxLayer"]
+modulate = Color( 0.968627, 0.964706, 0.941176, 1 )
+position = Vector2( 95.8167, 120.938 )
+frames = SubResource( 8 )
+frame = 4
+playing = true
+
+[node name="ParallaxBackground5" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground5"]
+position = Vector2( -8.5, 5 )
+motion_offset = Vector2( 200, 0 )
+motion_mirroring = Vector2( 600, 1 )
+
+[node name="Clouds" type="Sprite" parent="ParallaxBackground5/ParallaxLayer"]
+modulate = Color( 0.745098, 0.772549, 0.878431, 1 )
+self_modulate = Color( 0.85098, 0.8, 0.8, 1 )
+position = Vector2( 166.611, 201.393 )
+scale = Vector2( 0.652656, 0.249625 )
+texture = ExtResource( 20 )
+
+[node name="krzyze" type="CanvasLayer" parent="."]
+follow_viewport_enable = true
+
+[node name="Crosses" type="TileMap" parent="krzyze"]
+tile_set = SubResource( 9 )
+cell_size = Vector2( 2, 2 )
+cell_quadrant_size = 38
+format = 1
+tile_data = PoolIntArray( 5898725, 0, 0, 6882353, 0, 0, 6947865, 0, 0, 6947925, 0, 0, 7471512, 0, 0, 7537066, 0, 0, 7537067, 0, 0, 7930428, 0, 0, 7930521, 0, 0, 7930797, 0, 0, 7930836, 0, 0, 8979595, 0, 0, 9503088, 0, 0, 9503503, 0, 0, 9503518, 0, 0, 9503538, 0, 0, 9503597, 0, 0, 9568973, 0, 0, 9699661, 0, 0, 9699662, 0, 0, 11601162, 0, 0, 11732246, 0, 0, 12124409, 0, 0, 14155937, 0, 0, 14156123, 0, 0, 14157442, 0, 0, 14221353, 0, 0, 14221507, 0, 0, 14221508, 0, 0, 14221637, 0, 0, 14221714, 0, 0, 14222828, 0, 0, 14222848, 0, 0, 14222907, 0, 0, 14223001, 0, 0, 14223042, 0, 0, 14223100, 0, 0, 14287025, 0, 0, 14287111, 0, 0, 14287292, 0, 0, 14352475, 0, 0, 14352507, 0, 0, 14352508, 0, 0, 14352528, 0, 0, 14418135, 0, 0, 14549099, 0, 0 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+follow_viewport_enable = true
+
+[node name="Trees" type="TileMap" parent="CanvasLayer"]
+tile_set = SubResource( 10 )
+cell_size = Vector2( 2, 2 )
+format = 1
+tile_data = PoolIntArray( 4195357, 0, 0, 5243447, 0, 0, 5309377, 0, 0, 6750528, 0, 0, 6816459, 0, 0, 6816573, 0, 0, 8914141, 0, 0, 11403622, 0, 0, 11535919, 0, 0, 11536711, 0, 0, 11536869, 0, 0, 11599908, 0, 0, 11601584, 0, 0, 11602014, 0, 0, 11602166, 0, 0, 11665584, 0, 0 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 24 )
+volume_db = 10.0
+autoplay = true
+
+[node name="Killspace" type="Area2D" parent="."]
+position = Vector2( 1, 0 )
+scale = Vector2( 2, 1 )
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killspace"]
+position = Vector2( 1285.65, 786.287 )
+shape = SubResource( 11 )
+
+[node name="MovingPlatform1" type="Node2D" parent="."]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="MovingPlatform1"]
+position = Vector2( 2845.32, 399.529 )
+collision_layer = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="MovingPlatform1/KinematicBody2D"]
+position = Vector2( 0.418221, 0.49719 )
+scale = Vector2( 0.378102, 0.255858 )
+texture = ExtResource( 26 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MovingPlatform1/KinematicBody2D"]
+position = Vector2( 0.123535, 0.250916 )
+shape = SubResource( 12 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MovingPlatform1"]
+autoplay = "Platform"
+anims/Platform = SubResource( 13 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="Node2D"]
+position = Vector2( 3850.88, 473.599 )
+collision_layer = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Node2D/KinematicBody2D"]
+position = Vector2( 1.73242, -0.863037 )
+scale = Vector2( 0.392499, 0.271212 )
+texture = ExtResource( 26 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/KinematicBody2D"]
+position = Vector2( 1.68018, -1.31818 )
+shape = SubResource( 14 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 15 )
+
+[node name="Enemy" parent="." instance=ExtResource( 27 )]
+position = Vector2( 4339.09, 267.117 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2929.99, 267.048 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 27 )]
+position = Vector2( 3367.78, 267.351 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 73.2587, -89.9361 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 27 )]
+position = Vector2( 4714.62, 266.167 )
+
+[node name="Enemy5" parent="." instance=ExtResource( 27 )]
+position = Vector2( 184.344, 266.904 )
+[connection signal="body_entered" from="Gate" to="." method="_on_Gate_body_entered"]
+[connection signal="body_entered" from="Killspace" to="." method="_on_Killspace_body_entered"]

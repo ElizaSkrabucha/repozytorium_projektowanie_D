@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/(Free) Horror Ambiance - Ominous Background Music.ogg-98e78cacbf85c7791a1cbb09a81538bc.oggstr"
+
+[deps]
+
+source_file="res://Assets/tło/(Free) Horror Ambiance - Ominous Background Music.ogg"
+dest_files=[ "res://.import/(Free) Horror Ambiance - Ominous Background Music.ogg-98e78cacbf85c7791a1cbb09a81538bc.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

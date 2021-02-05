@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Scary Forest Royalty Free Ambience Sound Effects.ogg-daa4bfbb04ff2c74cae36c34409ed3f8.oggstr"
+
+[deps]
+
+source_file="res://Assets/tło/Scary Forest Royalty Free Ambience Sound Effects.ogg"
+dest_files=[ "res://.import/Scary Forest Royalty Free Ambience Sound Effects.ogg-daa4bfbb04ff2c74cae36c34409ed3f8.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

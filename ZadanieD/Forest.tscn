@@ -1,0 +1,338 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://Hero.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Forest/bgrd_tree2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Forest/env_ground.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Forest/bgrd_tree1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Forest/main_background.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Forest/Platform_grass.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Forest/sprite_ground.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Forest/env_trees.png" type="Texture" id=8]
+[ext_resource path="res://Rats.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Forest.gd" type="Script" id=10]
+[ext_resource path="res://Assets/MagicSchoolOne.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://Assets/Forest/anim/03.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Forest/anim/01.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Forest/anim/02.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Forest/anim/06.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Forest/anim/07.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Forest/anim/08.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Forest/anim/09.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Forest/anim/04.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Forest/anim/05.png" type="Texture" id=20]
+[ext_resource path="res://Treeboy.gd" type="Script" id=21]
+[ext_resource path="res://Assets/Forest/sprite_ground2.png" type="Texture" id=22]
+[ext_resource path="res://Assets/tło/Scary Forest Royalty Free Ambience Sound Effects.ogg" type="AudioStream" id=23]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 11 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 128, 24, 0, 24, 0, 0, 128, 0 )
+
+[sub_resource type="TileSet" id=3]
+0/name = "env_ground.png 0"
+0/texture = ExtResource( 3 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 128, 88, 128, 24 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 2 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 3236.82, 10 )
+
+[sub_resource type="Animation" id=5]
+length = 10.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("KinematicBody2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5, 10 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 4745, 450.534 ), Vector2( 5312.3, 450.534 ), Vector2( 4745, 450.534 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("KinematicBody2D:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 40.7051, 4.62527 )
+
+[sub_resource type="TileSet" id=7]
+1/name = "env_trees.png 1"
+1/texture = ExtResource( 8 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 304, 124, 184 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "env_trees.png 2"
+2/texture = ExtResource( 8 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 424, 340, 116, 156 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+
+[sub_resource type="TileSet" id=8]
+0/name = "env_trees.png 0"
+0/texture = ExtResource( 8 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 340, 0, 172, 272 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 12 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "Boy",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 37.1519, 45.6173 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 34.209, 103.132 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 10, 55 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 10 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 21.7544, -106.642 )
+
+[node name="Rats" parent="." instance=ExtResource( 9 )]
+position = Vector2( 124.713, 23.0323 )
+
+[node name="Rats4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 372.952, 26.8078 )
+
+[node name="Rats3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1719.99, -167.248 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2( 0, 0 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 350.116, 241.191 )
+scale = Vector2( 0.688411, 0.84567 )
+texture = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="ParallaxBackground"]
+margin_left = 9.52441
+margin_top = 7.937
+margin_right = 99.5244
+margin_bottom = 44.937
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ParallaxBackground3" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2( 0.7, 1 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground3"]
+motion_mirroring = Vector2( 810, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground3/ParallaxLayer"]
+position = Vector2( 400, 328 )
+scale = Vector2( 1, 1.03504 )
+texture = ExtResource( 2 )
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_mirroring = Vector2( 630, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 308, 372 )
+scale = Vector2( 0.77451, 0.805556 )
+texture = ExtResource( 4 )
+
+[node name="Platforms" type="TileMap" parent="."]
+scale = Vector2( 0.5, 0.5 )
+mode = 2
+tile_set = SubResource( 3 )
+collision_layer = 2
+format = 1
+tile_data = PoolIntArray( 262218, 0, 0, 262220, 0, 0, 262222, 0, 0, 262226, 0, 0, 262230, 0, 0, 262232, 0, 0, 262234, 0, 0, 262236, 0, 0, 262238, 0, 0, 262239, 0, 0, 262240, 0, 0, 262241, 0, 0, 262242, 0, 0, 327750, 0, 0, 327782, 0, 0, 393282, 0, 0, 393321, 0, 0, 458861, 0, 0, 524332, 0, 0, 524336, 0, 0, 524339, 0, 0, 524343, 0, 0, 524347, 0, 0, 524349, 0, 0, 524351, 0, 0, 524401, 0, 0, 589864, 0, 0, 655477, 0, 0, 655479, 0, 0, 655481, 0, 0, 655483, 0, 0, 720933, 0, 0, 786466, 0, 0, 786558, 0, 0, 852097, 0, 0, 983035, 0, 0, 983036, 0, 0, 983038, 0, 0, 983039, 0, 0, 917504, 0, 0, 917505, 0, 0, 917507, 0, 0, 917509, 0, 0, 917511, 0, 0, 917513, 0, 0, 917515, 0, 0, 917517, 0, 0, 917519, 0, 0, 917521, 0, 0, 917523, 0, 0, 917525, 0, 0, 917527, 0, 0, 917529, 0, 0, 917531, 0, 0, 917533, 0, 0, 917535, 0, 0, 917537, 0, 0, 917538, 0, 0, 917539, 0, 0, 917541, 0, 0, 917542, 0, 0, 917543, 0, 0, 917544, 0, 0, 917546, 0, 0, 917548, 0, 0, 917550, 0, 0, 917552, 0, 0, 917637, 0, 0, 917639, 0, 0, 917641, 0, 0, 917643, 0, 0, 917645, 0, 0, 917647, 0, 0, 917670, 0, 0, 917672, 0, 0, 917674, 0, 0, 917676, 0, 0, 917678, 0, 0, 917680, 0, 0, 917682, 0, 0, 917684, 0, 0, 917686, 0, 0, 917688, 0, 0, 917690, 0, 0, 917692, 0, 0, 917694, 0, 0 )
+
+[node name="Killzone" type="Area2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2( 2917.9, 963.714 )
+shape = SubResource( 4 )
+
+[node name="dirt1" type="Sprite" parent="."]
+position = Vector2( 1983.83, 296.813 )
+scale = Vector2( 0.372186, 1 )
+texture = ExtResource( 7 )
+
+[node name="dirt2" type="Sprite" parent="."]
+position = Vector2( 4447.62, 539.854 )
+scale = Vector2( 0.746764, 2.61115 )
+texture = ExtResource( 7 )
+
+[node name="dirt3" type="Sprite" parent="."]
+position = Vector2( 5727.19, 536.241 )
+scale = Vector2( 1.61195, 2.53752 )
+texture = ExtResource( 7 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D"]
+autoplay = "Platform"
+anims/Platform = SubResource( 5 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="Node2D"]
+position = Vector2( 5196.89, 450.534 )
+collision_layer = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Node2D/KinematicBody2D"]
+position = Vector2( -54.1377, 2.98808 )
+scale = Vector2( 0.300817, 0.280477 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/KinematicBody2D"]
+position = Vector2( -54.3677, 5.35751 )
+shape = SubResource( 6 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enable = true
+
+[node name="FrontTrees" type="TileMap" parent="CanvasLayer"]
+scale = Vector2( 0.5, 0.5 )
+mode = 2
+tile_set = SubResource( 7 )
+format = 1
+tile_data = PoolIntArray( 131150, 2, 0, 131162, 2, 0, 131167, 2, 0, 196679, 2, 0, 393264, 2, 0, 393275, 2, 0, 393278, 2, 0, 393335, 0, 0, 393343, 0, 0, 524406, 2, 0, 524409, 2, 0, 655364, 0, 0, 655372, 0, 0, 655381, 0, 0, 655389, 0, 0, 655402, 0, 0, 655403, 0, 0, 655405, 0, 0, 655407, 0, 0, 786438, 2, 0, 786439, 2, 0, 786441, 2, 0, 786442, 2, 0, 786447, 2, 0, 786448, 2, 0, 786451, 2, 0, 786455, 1, 0, 786472, 1, 0, 786566, 1, 0, 786570, 2, 0, 786574, 2, 0, 786600, 2, 0, 786603, 2, 0, 786607, 2, 0, 786610, 2, 0 )
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+layer = -1
+follow_viewport_enable = true
+
+[node name="Backtrees" type="TileMap" parent="CanvasLayer2"]
+scale = Vector2( 0.5, 0.5 )
+mode = 2
+tile_set = SubResource( 8 )
+format = 1
+tile_data = PoolIntArray( 75, 0, 0, 87, 0, 0, 89, 0, 0, 92, 0, 0, 97, 0, 0, 262205, 0, 0, 393335, 0, 0, 393338, 0, 0, 655360, 0, 0, 655364, 0, 0, 655372, 0, 0, 655380, 0, 0, 655388, 0, 0, 655395, 0, 0, 655398, 0, 0, 655406, 0, 0, 655407, 0, 0, 655408, 0, 0, 655496, 0, 0, 655501, 0, 0, 655529, 0, 0, 655533, 0, 0, 655534, 0, 0, 655537, 0, 0, 655540, 0, 0 )
+
+[node name="Rats5" parent="." instance=ExtResource( 9 )]
+position = Vector2( 5515.44, 13.3305 )
+
+[node name="Rats6" parent="." instance=ExtResource( 9 )]
+position = Vector2( 5137.7, 25.0792 )
+
+[node name="Rats7" parent="." instance=ExtResource( 9 )]
+position = Vector2( 5344.25, 24.5017 )
+
+[node name="Dirt" type="Sprite" parent="."]
+position = Vector2( 2976, 178.336 )
+scale = Vector2( 0.869869, 1.29466 )
+texture = ExtResource( 7 )
+
+[node name="Treeboy" type="Area2D" parent="."]
+position = Vector2( 5122.84, 6.74832 )
+collision_layer = 2
+script = ExtResource( 21 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Treeboy"]
+position = Vector2( 952.089, 277.511 )
+scale = Vector2( 0.110818, 0.156536 )
+frames = SubResource( 9 )
+animation = "Boy"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Treeboy"]
+position = Vector2( 873.663, 291.3 )
+shape = SubResource( 10 )
+
+[node name="Tree" type="StaticBody2D" parent="."]
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree"]
+position = Vector2( 6090.55, 349.22 )
+shape = SubResource( 11 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 718.638, 544.84 )
+scale = Vector2( 3.42005, 2.72822 )
+texture = ExtResource( 22 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 23 )
+volume_db = -10.0
+autoplay = true
+
+[node name="Barier" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barier"]
+position = Vector2( 20.4929, 396.413 )
+shape = SubResource( 12 )
+[connection signal="body_entered" from="Killzone" to="KinematicBody2D" method="_on_Killzone_body_entered"]
+[connection signal="body_entered" from="Treeboy" to="KinematicBody2D" method="_on_Treeboy_body_entered"]

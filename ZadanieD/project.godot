@@ -1,0 +1,42 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="Zadanie D"
+run/main_scene="res://START.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+global="*res://global.gd"
+
+[display]
+
+window/size/width=640
+window/size/height=480
+window/size/resizable=false
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Platform"
+2d_physics/layer_3="Fallspace"
+2d_physics/layer_4="Item"
+2d_physics/layer_5="Enemy"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

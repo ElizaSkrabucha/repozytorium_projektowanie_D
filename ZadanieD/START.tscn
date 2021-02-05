@@ -1,0 +1,194 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Button.gd" type="Script" id=1]
+[ext_resource path="res://Assets/tło/Wallpaper-pixel-art-pixelated-pixels-digital-art-space-.jpg" type="Texture" id=2]
+[ext_resource path="res://Assets/MagicSchoolOne.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/DampfPlatzsh.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Assets/CemetaryPack/Props/Grave03.png" type="Texture" id=5]
+[ext_resource path="res://Assets/CemetaryPack/Water/Tree.png" type="Texture" id=6]
+[ext_resource path="res://Assets/CemetaryPack/Props/Church.png" type="Texture" id=7]
+[ext_resource path="res://START.gd" type="Script" id=8]
+[ext_resource path="res://Assets/CemetaryPack/Props/Grave02.png" type="Texture" id=17]
+
+[sub_resource type="DynamicFont" id=1]
+size = 46
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+outline_color = Color( 0.0196078, 0.00784314, 0.00784314, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 35
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+
+[sub_resource type="Theme" id=5]
+default_font = SubResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.0941176, 0.00392157, 0.227451, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="DynamicFont" id=8]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.027451, 0.00784314, 0.00784314, 1 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 30
+font_data = ExtResource( 4 )
+
+[node name="Control" type="Control"]
+margin_right = 645.0
+margin_bottom = 489.0
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -3.0
+margin_top = -3.0
+margin_right = 648.0
+margin_bottom = 491.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TextureRect"]
+margin_left = 246.014
+margin_top = 16.0426
+margin_right = 406.014
+margin_bottom = 84.0426
+custom_fonts/font = SubResource( 1 )
+text = "Welcome to"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="TextureRect"]
+margin_left = 56.3218
+margin_top = 95.7867
+margin_right = 612.322
+margin_bottom = 162.787
+custom_fonts/font = SubResource( 2 )
+text = "Why isn't it working?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="TextureRect"]
+margin_left = 221.944
+margin_top = 183.719
+margin_right = 439.944
+margin_bottom = 235.719
+custom_fonts/font = SubResource( 3 )
+text = "Tell Me Your Name"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_left = 538.183
+margin_top = 403.001
+margin_right = 590.183
+margin_bottom = 484.001
+rect_pivot_offset = Vector2( -505.001, -174.479 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+margin_left = 505.704
+margin_top = 412.256
+margin_right = 557.704
+margin_bottom = 493.256
+rect_pivot_offset = Vector2( -505.001, -174.479 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+margin_left = 92.3351
+margin_top = 365.861
+margin_right = 224.335
+margin_bottom = 482.861
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+margin_left = 31.4448
+margin_top = 367.433
+margin_right = 163.444
+margin_bottom = 484.433
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect7" type="TextureRect" parent="."]
+margin_left = -35.1171
+margin_top = 365.301
+margin_right = 96.8829
+margin_bottom = 482.301
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+margin_left = 492.556
+margin_top = 444.502
+margin_right = 532.556
+margin_bottom = 484.502
+texture = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+visible = false
+margin_left = 228.861
+margin_top = 314.473
+margin_right = 435.861
+margin_bottom = 397.473
+theme = SubResource( 5 )
+custom_styles/hover = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+text = "Press Here to Start"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect8" type="TextureRect" parent="."]
+margin_left = 592.669
+margin_top = 315.022
+margin_right = 662.669
+margin_bottom = 482.022
+texture = ExtResource( 7 )
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 233.607
+margin_top = 257.888
+margin_right = 425.607
+margin_bottom = 304.888
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+align = 1
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
+[connection signal="text_entered" from="LineEdit" to="." method="_on_LineEdit_text_entered"]
